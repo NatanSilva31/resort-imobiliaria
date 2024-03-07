@@ -3,7 +3,7 @@
 ![img](https://github.com/NatanSilva31/Projeto-Resort-Imobiliaria/blob/669ff44b3f4060efa9bd81943b5918555ee269ad/imagens%20prototipo/Home.jpg)
 
 - Tela de Imóveis
-![img]()
+![img](https://github.com/NatanSilva31/Projeto-Resort-Imobiliaria/blob/f5879f1f03cafe0ad6fd934870dd5ab79cf93c7b/imagens%20prototipo/Residencias.jpg)
 
 - Tela Valores
 ![img](https://github.com/NatanSilva31/Projeto-Resort-Imobiliaria/blob/469e6f2bdb0360caea60a5570839404af967e7f8/imagens%20prototipo/Valores.jpg)
