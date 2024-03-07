@@ -12,7 +12,7 @@
 ![img]()
 
 - Tela Rodapé
-![img]()
+![img](https://github.com/NatanSilva31/Projeto-Resort-Imobiliaria/blob/fd1559f067674b0ca609f5ddf5e4c63c4522e276/imagens%20prototipo/Rodap%C3%A9.jpg)
 
 - Tela Login
 ![img]()
