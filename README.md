@@ -9,13 +9,28 @@
 ![img](https://github.com/NatanSilva31/Projeto-Resort-Imobiliaria/blob/469e6f2bdb0360caea60a5570839404af967e7f8/imagens%20prototipo/Valores.jpg)
 
 - Tela Contato
-![img]()
+![img](https://github.com/NatanSilva31/Projeto-Resort-Imobiliaria/blob/ae3d3dd40e04d2108be557afbb376e072446aded/imagens%20prototipo/Contatos.jpg)
 
 - Tela Rodapé
 ![img](https://github.com/NatanSilva31/Projeto-Resort-Imobiliaria/blob/fd1559f067674b0ca609f5ddf5e4c63c4522e276/imagens%20prototipo/Rodap%C3%A9.jpg)
 
 - Tela Login
-![img]()
+![img](https://github.com/NatanSilva31/Projeto-Resort-Imobiliaria/blob/ae3d3dd40e04d2108be557afbb376e072446aded/imagens%20prototipo/Tela%20Login.jpg)
 
 - Tela Cadastro
 ![img](https://github.com/NatanSilva31/Projeto-Resort-Imobiliaria/blob/a67e4e7596ee85c354d2e2cf9cc701fae688d290/imagens%20prototipo/Tela%20Cadastro.jpg)
+
+
+Funcionalidades
+
+- Tela inicial
+
+- Tela de login/cadastro para efetuar a reserva
+
+- Tela com imovéis disponiveis
+
+- Tela de visualização dos imoveis
+
+- Tela de compra
+
+- Formulário para contato
