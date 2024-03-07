@@ -6,7 +6,7 @@
 ![img]()
 
 - Tela Valores
-![img]()
+![img](https://github.com/NatanSilva31/Projeto-Resort-Imobiliaria/blob/469e6f2bdb0360caea60a5570839404af967e7f8/imagens%20prototipo/Valores.jpg)
 
 - Tela Contato
 ![img]()
