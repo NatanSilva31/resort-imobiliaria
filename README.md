@@ -20,7 +20,9 @@
 - Tela Cadastro
 ![img](https://github.com/NatanSilva31/Projeto-Resort-Imobiliaria/blob/a67e4e7596ee85c354d2e2cf9cc701fae688d290/imagens%20prototipo/Tela%20Cadastro.jpg)
 
-
+- Diagrama (MER)
+![img](https://github.com/NatanSilva31/Projeto-Resort-Imobiliaria/blob/152c1b57d4684a015ad13c593fddeaa05df6caaf/diagrama/DiagramaResort.png)
+  
 Funcionalidades
 
 - Tela inicial
