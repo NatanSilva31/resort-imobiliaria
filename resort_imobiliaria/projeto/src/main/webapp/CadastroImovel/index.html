@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Admin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="col" id="sidebar">
+        <nav>
+          <div class="header">
+            <a class="brand" href="#"><i class="fa fa-user"></i></a>
+            <button id="menu"><i class="fa fa-bars"></i></button>
+          </div>
+          <ul>
+            <li class="search">
+              <input class="form-control" id="search" placeholder="Search..." />
+              <button class="btn-search">
+                <i class="fa fa-lg fa-search"></i>
+              </button>
+            </li>
+            <li class="nav-text">Painel admin</li>
+            <li><a class="active" href="#">Tela geral</a></li>
+            <li><a href="./Form.html">Adicionar imovel</a></li>
+            <!-- <li><a href="#">test</a></li>
+            <li><a href="#">test</a></li> -->
+            <li class="nav-text">+</li>
+            <li>
+            <li class="nav-text">UXvideos</li>
+              <div class="divider"></div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="col">
+        <div class="row fluid header">
+          <div class="label">
+            <span>Admin</span>
+            <h2>Relátorios</h2>
+          </div>
+          <div id="date-range">
+            <input class="form-control" />
+            <div>-</div>
+            <input class="form-control" />
+          </div>
+        </div>
+        <div class="divider"></div>
+        <div class="row fluid">
+          <div class="doughnut">
+            <div class="chart">
+              <canvas id="test1"></canvas>
+            </div>
+            <strong>Traffic</strong>
+            <h4>New vs Returning</h4>
+          </div>
+          <div class="doughnut">
+            <div class="chart">
+              <canvas id="test2"></canvas>
+            </div>
+            <strong>Revenue</strong>
+            <h4>New vs Recurring</h4>
+          </div>
+          <div class="doughnut">
+            <div class="chart">
+              <canvas id="test3"></canvas>
+            </div>
+            <strong>Traffic</strong>
+            <h4>Direct vs Referrals</h4>
+          </div>
+        </div>
+        <div class="divider">
+          <h3>Quick Stats</h3>
+        </div>
+        <div class="row sparklines">
+          <div class="col sparkline">
+            <div class="chart">
+              <div class="label">
+                <span>Page Views</span>
+                <h2>1,293</h2>
+              </div>
+              <div class="chart-container">
+                <canvas id="test4"></canvas>
+              </div>
+            </div>
+          </div>
+          <div class="col sparkline">
+            <div class="chart">
+              <div class="label">
+                <span>Downloads</span>
+                <h2>758</h2>
+              </div>
+              <div class="chart-container">
+                <canvas id="test5"></canvas>
+              </div>
+            </div>
+          </div>
+          <div class="col sparkline">
+            <div class="chart">
+              <div class="label">
+                <span>Sign-ups</span>
+                <h2>1,293</h2>
+              </div>
+              <div class="chart-container">
+                <canvas id="test6"></canvas>
+              </div>
+            </div>
+          </div>
+          <div class="col sparkline">
+            <div class="chart">
+              <div class="label">
+                <span>Downloads</span>
+                <h2>758</h2>
+              </div>
+              <div class="chart-container">
+                <canvas id="test7"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="divider"></div>
+        <div class="row top">
+          <div class="col">
+            <div class="list">
+              <h6>Countries</h6>
+              <a href="#"
+                ><span class="progress" style="width: 62.4%"></span
+                ><span>United States</span><span>62.4%</span></a
+              ><a href="#"
+                ><span class="progress" style="width: 15%"></span
+                ><span>India</span><span>15.0%</span></a
+              ><a href="#"
+                ><span class="progress" style="width: 5%"></span
+                ><span>United Kingdom</span><span>5.0%</span></a
+              ><a href="#"
+                ><span class="progress" style="width: 5%"></span
+                ><span>Canada</span><span>5.0%</span></a
+              ><a href="#"
+                ><span class="progress" style="width: 4.5%"></span
+                ><span>Russia</span><span>4.5%</span></a
+              ><a href="#"
+                ><span class="progress" style="width: 2.3%"></span
+                ><span>Mexico</span><span>2.3%</span></a
+              ><a href="#"
+                ><span class="progress" style="width: 1.7%"></span
+                ><span>Spain</span><span>1.7%</span></a
+              ><a href="#"
+                ><span class="progress" style="width: 1.5%"></span
+                ><span>France</span><span>1.5%</span></a
+              ><a href="#"
+                ><span class="progress" style="width: 1.4%"></span
+                ><span>South Africa</span><span>1.4%</span></a
+              ><a href="#"
+                ><span class="progress" style="width: 1.2%"></span
+                ><span>Japan</span><span>1.2%</span></a
+              >
+            </div>
+            <a class="btn primary" href="#">All countries</a>
+          </div>
+          <div class="col flex-start">
+            <div class="list">
+              <h6>Most visited pages</h6>
+              <a href="#"><span>/ (Logged out)</span><span>3,929,481</span></a
+              ><a href="#"><span>/ (Logged in)</span><span>1,143,393</span></a
+              ><a href="#"><span>/tour</span><span>938,287</span></a
+              ><a href="#"
+                ><span>/features/something</span><span>749,393</span></a
+              ><a href="#"
+                ><span>/features/another-thing</span><span>695,912</span></a
+              ><a href="#"><span>/users/username</span><span>501,938</span></a
+              ><a href="#"><span>/page-title</span><span>392,842</span></a
+              ><a href="#"><span>/some/page-slug</span><span>298,183</span></a
+              ><a href="#"
+                ><span>/another/directory/and/page-title</span
+                ><span>193,129</span></a
+              ><a href="#"
+                ><span>/one-more/page/directory/file-name</span
+                ><span>93,382</span></a
+              >
+            </div>
+            <a class="btn primary" href="#">View all pages</a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col list-container">
+            <div class="list">
+              <h6>Devices and resolutions</h6>
+              <a href="#"
+                ><span>Desktop (1920x1080)</span><span>3,929,481</span></a
+              ><a href="#"
+                ><span>Desktop (1366x768)</span><span>1,143,393</span></a
+              ><a href="#"
+                ><span>Desktop (1440x900)</span><span>938,287</span></a
+              ><a href="#"
+                ><span>Desktop (1280x800)</span><span>749,393</span></a
+              ><a href="#"><span>Tablet (1024x768)</span><span>695,912</span></a
+              ><a href="#"><span>Tablet (768x1024)</span><span>501,938</span></a
+              ><a href="#"><span>Phone (320x480)</span><span>392,842</span></a
+              ><a href="#"><span>Phone (720x450)</span><span>298,183</span></a
+              ><a href="#"
+                ><span>Desktop (2560x1080)</span><span>193,129</span></a
+              ><a href="#"
+                ><span>Desktop (2560x1080)</span><span>193,129</span></a
+              >
+            </div>
+            <a class="btn primary" href="#">View all devices</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://codepen.io/milesmanners/pen/WOeOrV.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/726875/fontawesome.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/726875/solid.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="https://codepen.io/milesmanners/pen/XgYOPy.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

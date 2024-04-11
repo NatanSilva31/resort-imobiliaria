@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== FAVICON ===============-->
+    <link
+            rel="shortcut icon"
+            href="./imagens/favicon.png"
+            type="image/x-icon"
+    />
+
+    <!--=============== BOXICONS ===============-->
+    <link
+            href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+            rel="stylesheet"
+    />
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="./styles/swiper-bundle.min.css" />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="styles/styles.css" />
+
+    <title>Resort Imobiliária</title>
+</head>
+<body>
+<!--==================== HEADER ====================-->
+<header class="header" id="header">
+    <nav class="nav container">
+        <a href="#" class="nav__logo">
+            Resort Imobiliária <i class="bx bxs-home-alt-2"></i>
+        </a>
+
+        <div class="nav__menu">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="#home" class="nav__link active-link">
+                        <i class="bx bx-home-alt-2"></i>
+                        <span>Home</span>
+                    </a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="#popular" class="nav__link">
+                        <i class="bx bx-building-house"></i>
+                        <span>Residências</span>
+                    </a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="#value" class="nav__link">
+                        <i class="bx bx-award"></i>
+                        <span>Valores</span>
+                    </a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="#contact" class="nav__link">
+                        <i class="bx bx-phone"></i>
+                        <span>Contato</span>
+                    </a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="TelaLogin/TelaLogin.html" class="nav__link">
+                        <i class='bx bx-log-in' ></i>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+
+
+
+        <!-- Theme Change Button -->
+        <i class="bx bx-moon change-theme" id="theme-button"></i>
+
+        <!--Importando a Tela de Login para o botão-->
+        <a href="TelaLogin/TelaLogin.html" class="button nav__button"> Login </a>
+    </nav>
+</header>
+
+<!--==================== MAIN ====================-->
+<main class="main">
+    <!--==================== HOME ====================-->
+    <section class="home section" id="home">
+        <div class="home__container container grid">
+            <div class="home__data">
+                <h1 class="home__title">
+                    Descubra <br />
+                    O mais apropriado <br />
+                    Imóvel
+                </h1>
+                <p class="home__description">
+                    Encontre uma variedade de propriedades que combinam com você e com muita facilidade.
+                </p>
+                <form action="" class="home__search">
+                    <i class="bx bxs-map"></i>
+                    <input
+                            type="search"
+                            placeholder="Procure por localização ..."
+                            class="home__search-input"
+                    />
+                    <button class="button">Buscar</button>
+                </form>
+
+                <div class="home__value">
+                    <div>
+                        <h1 class="home__value-number">9K <span>+</span></h1>
+                        <span class="home__value-description">
+                  Imóveis <br />
+                  Premium
+                </span>
+                    </div>
+                    <div>
+                        <h1 class="home__value-number">2K <span>+</span></h1>
+                        <span class="home__value-description">
+                  Clientes <br />
+                  Satisfeitos
+                </span>
+                    </div>
+                    <div>
+                        <h1 class="home__value-number">28K <span>+</span></h1>
+                        <span class="home__value-description">
+                  Unidades <br />
+                  Vendidas
+                </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="home__images">
+                <div class="home__orbe"></div>
+
+                <div class="home__img">
+                    <img src="./imagens/home.jpg" alt="" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--==================== LOGOS ====================-->
+    <section class="logos section">
+        <div class="logos__container container grid">
+            <div class="logos__img">
+                <img src="./imagens/logo1.png" alt="" />
+            </div>
+            <div class="logos__img">
+                <img src="./imagens/logo2.png" alt="" />
+            </div>
+            <div class="logos__img">
+                <img src="./imagens/logo3.png" alt="" />
+            </div>
+            <div class="logos__img">
+                <img src="./imagens/logo4.png" alt="" />
+            </div>
+        </div>
+    </section>
+
+    <!--==================== POPULAR ====================-->
+    <section class="popular section" id="popular">
+        <div class="container">
+            <span class="section__subtitle">A sua melhor escolha</span>
+
+            <h2 class="section__title">Imóveis Populares<span>.</span></h2>
+
+            <div class="popular__container swiper">
+                <div class="swiper-wrapper">
+                    <article class="popular__card swiper-slide">
+                        <img
+                                src="./imagens/popular1.jpg"
+                                alt=""
+                                class="popular__img"
+                        />
+
+                        <div class="popular__data">
+                            <h2 class="popular__price"><span>R$ </span>500.000,00</h2>
+                            <h3 class="popular__title">Condomínio Vivaz</h3>
+                            <p class="popular__description">
+                                Rua Lisboa - Alphaville, Santana de Parnaíba - SP
+                                #9876
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="popular__card swiper-slide">
+                        <img
+                                src="./imagens/popular2.jpg"
+                                alt=""
+                                class="popular__img"
+                        />
+
+                        <div class="popular__data">
+                            <h2 class="popular__price"><span>R$ </span>500.000,00</h2>
+                            <h3 class="popular__title">Condomínio Viva+</h3>
+                            <p class="popular__description">
+                                Rua Lisboa - Alphaville, Santana de Parnaíba - SP
+                                #9876
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="popular__card swiper-slide">
+                        <img
+                                src="./imagens/popular3.jpg"
+                                alt=""
+                                class="popular__img"
+                        />
+
+                        <div class="popular__data">
+                            <h2 class="popular__price"><span>R$ </span>500.000,00</h2>
+                            <h3 class="popular__title">Condomínio Enter</h3>
+                            <p class="popular__description">
+                                Rua Lisboa - Alphaville, Santana de Parnaíba - SP
+                                #9876
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="popular__card swiper-slide">
+                        <img
+                                src="./imagens/popular4.jpg"
+                                alt=""
+                                class="popular__img"
+                        />
+
+                        <div class="popular__data">
+                            <h2 class="popular__price"><span>R$ </span>500.000,00</h2>
+                            <h3 class="popular__title">Condomínio Click Alphaville</h3>
+                            <p class="popular__description">
+                                Rua Lisboa - Alphaville, Santana de Parnaíba - SP
+                                #9876
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="popular__card swiper-slide">
+                        <img
+                                src="./imagens/popular5.jpg"
+                                alt=""
+                                class="popular__img"
+                        />
+
+                        <div class="popular__data">
+                            <h2 class="popular__price"><span>R$ </span>500.000,00</h2>
+                            <h3 class="popular__title">Condomínio My Click Alphaville</h3>
+                            <p class="popular__description">
+                                Rua Lisboa - Alphaville, Santana de Parnaíba - SP
+                                #9876
+                            </p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="swiper-button-next">
+                    <i class="bx bx-chevron-right"></i>
+                </div>
+                <div class="swiper-button-prev">
+                    <i class="bx bx-chevron-left"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--==================== VALUE ====================-->
+    <section class="value section" id="value">
+        <div class="value__container container grid">
+            <div class="value__images">
+                <div class="value__orbe"></div>
+
+                <div class="value__img">
+                    <img src="./imagens/value.jpg" alt="" />
+                </div>
+            </div>
+
+            <div class="value__content">
+                <div class="value__data">
+                    <span class="section__subtitle">Nosso valor</span>
+                    <h2 class="section__title">Valor que oferecemos a você<span>.</span></h2>
+                    <p class="value__description">
+                        Estamos sempre prontos para ajudar, oferecendo o melhor serviço para você.
+                        Acreditamos que um bom lugar para morar pode tornar sua vida melhor.
+                    </p>
+                </div>
+
+                <div class="value__accordion">
+                    <div class="value__accordion-item">
+                        <header class="value__accordion-header">
+                            <i class="bx bxs-shield-x value__accordion-icon"></i>
+                            <h3 class="value__accordion-title">
+                                As melhores taxas de juros do mercado
+                            </h3>
+                            <div class="value__accordion-arrow">
+                                <i class="bx bxs-down-arrow"></i>
+                            </div>
+                        </header>
+
+                        <div class="value__accordion-content">
+                            <p class="value__accordion-description">
+                                O preço que oferecemos é o melhor para você, garantimos nenhuma
+                                alteração de preço em sua propriedade devido a vários custos inesperados
+                                que podem acontecer.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="value__accordion-item">
+                        <header class="value__accordion-header">
+                            <i class="bx bxs-x-square value__accordion-icon"></i>
+                            <h3 class="value__accordion-title">
+                                Evite preços instáveis
+                            </h3>
+                            <div class="value__accordion-arrow">
+                                <i class="bx bxs-down-arrow"></i>
+                            </div>
+                        </header>
+
+                        <div class="value__accordion-content">
+                            <p class="value__accordion-description">
+                                O preço que oferecemos é o melhor para você, garantimos nenhuma
+                                alteração de preço em sua propriedade devido a vários custos inesperados
+                                que podem acontecer.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="value__accordion-item">
+                        <header class="value__accordion-header">
+                            <i class="bx bxs-bar-chart-square value__accordion-icon"></i>
+                            <h3 class="value__accordion-title">
+                                Melhores preços do mercado
+                            </h3>
+                            <div class="value__accordion-arrow">
+                                <i class="bx bxs-down-arrow"></i>
+                            </div>
+                        </header>
+
+                        <div class="value__accordion-content">
+                            <p class="value__accordion-description">
+                                O preço que oferecemos é o melhor para você, garantimos nenhuma
+                                alteração de preço em sua propriedade devido a vários custos inesperados
+                                que podem acontecer.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="value__accordion-item">
+                        <header class="value__accordion-header">
+                            <i class="bx bxs-check-square value__accordion-icon"></i>
+                            <h3 class="value__accordion-title">Segurança dos seus dados</h3>
+                            <div class="value__accordion-arrow">
+                                <i class="bx bxs-down-arrow"></i>
+                            </div>
+                        </header>
+
+                        <div class="value__accordion-content">
+                            <p class="value__accordion-description">
+                                O preço que oferecemos é o melhor para você, garantimos nenhuma
+                                alteração de preço em sua propriedade devido a vários custos inesperados
+                                que podem acontecer.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--==================== CONTACT ====================-->
+    <section class="contact section" id="contact">
+        <div class="contact__container container grid">
+            <div class="contact__images">
+                <div class="contact__orbe"></div>
+
+                <div class="contact__img">
+                    <img src="./imagens/contact.png" alt="" />
+                </div>
+            </div>
+
+            <div class="contact__content">
+                <div class="contact__data">
+                    <span class="section__subtitle">Contate-nos</span>
+                    <h2 class="section__title">Fácil de entrar em contato conosco<span>.</span></h2>
+                    <p class="contact__description">
+                        Há algum problema em encontrar a casa dos seus sonhos? Precisa de um guia em
+                        comprar a primeira casa? ou precisa de uma consulta sobre questões residenciais?
+                        basta entrar em contato conosco.
+                    </p>
+                </div>
+
+                <div class="contact__card">
+                    <div class="contact__card-box">
+                        <div class="contact__card-info">
+                            <i class="bx bxs-phone-call"></i>
+
+                            <div>
+                                <h3 class="contact__card-title">Celular</h3>
+                                <p class="contact__card-description">(11) 91563-5527</p>
+                            </div>
+                        </div>
+
+                        <button class="button contact__card-button">Ligue agora</button>
+                    </div>
+
+                    <div class="contact__card-box">
+                        <div class="contact__card-info">
+                            <i class="bx bxs-message-rounded-dots"></i>
+
+                            <div>
+                                <h3 class="contact__card-title">Chat</h3>
+                                <p class="contact__card-description">(11) 91563-5527</p>
+                            </div>
+                        </div>
+
+                        <button class="button contact__card-button">Converse agora</button>
+                    </div>
+
+                    <div class="contact__card-box">
+                        <div class="contact__card-info">
+                            <i class="bx bxs-video"></i>
+
+                            <div>
+                                <h3 class="contact__card-title">Video Chamada</h3>
+                                <p class="contact__card-description">(11) 91563-5527</p>
+                            </div>
+                        </div>
+
+                        <button class="button contact__card-button">
+                            Chamada por video
+                        </button>
+                    </div>
+
+                    <div class="contact__card-box">
+                        <div class="contact__card-info">
+                            <i class="bx bxs-envelope"></i>
+
+                            <div>
+                                <h3 class="contact__card-title">E-mail</h3>
+                                <p class="contact__card-description">resort@sac.com</p>
+                            </div>
+                        </div>
+
+                        <button class="button contact__card-button">Envie-nos um email</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--==================== SUBSCRIBE ====================-->
+    <section class="subscribe section">
+        <div class="subscribe__container container">
+            <h1 class="subscribe__title">Comece com Resort</h1>
+            <p class="subscribe__description">
+                Inscreva-se e encontre cotações de preços super atraentes nossas, encontre a sua
+                residência em breve
+            </p>
+            <a href="FormularioVenda/venda.html" class="button subscribe__button"> Começar </a>
+        </div>
+    </section>
+</main>
+
+<!--==================== FOOTER ====================-->
+<footer class="footer section">
+    <div class="footer__container container grid">
+        <div>
+            <a href="#" class="footer__logo">
+                Resort <i class="bx bxs-home-alt-2"></i>
+            </a>
+            <p class="footer__description">
+                Nossa visão é fazer com que todas as pessoas <br />
+                encontrem o melhor lugar para viver.
+            </p>
+        </div>
+
+        <div class="footer__content">
+            <div>
+                <h3 class="footer__title">Sobre</h3>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="#" class="footer__link">Sobre nós</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Características</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Notícias e blogs</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="footer__title">Empresa</h3>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="#" class="footer__link">Como trabalhamos?</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Capital</a>
+                    </li>
+                    <li>
+                        <a href="https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm" class="footer__link">Segurança</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="footer__title">Support</h3>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="https://api.whatsapp.com/send?phone=5511915635527" class="footer__link">FAQs</a>
+                    </li>
+                    <li>
+                        <a href="https://api.whatsapp.com/send?phone=5511915635527" class="footer__link">Suporte</a>
+                    </li>
+                    <li>
+                        <a href="FormularioVenda/venda.html" class="footer__link">Contate-nos</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="footer__title">Siga-nos</h3>
+
+                <ul class="footer__social">
+                    <a href="https://api.whatsapp.com/send?phone=5511915635527" class="footer__social-link">
+                        <i class="bx bxl-facebook-circle"></i>
+                    </a>
+                    <a href="https://instagram.com/natansv__31?igshid=NzZlODBkYWE4Ng==" class="footer__social-link">
+                        <i class="bx bxl-instagram-alt"></i>
+                    </a>
+                    <a href="https://www.pinterest.com/" class="footer__social-link">
+                        <i class="bx bxl-pinterest"></i>
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer__info container">
+        <span class="footer__copy">
+          &#169; Natanael Silva e Danilo Vitorino Pessoa. Todos os direitos reservados
+        </span>
+
+        <div class="footer__privacy">
+            <a href="#">Termos e Acordos</a>
+            <a href="#">Política de Privacidade</a>
+        </div>
+    </div>
+</footer>
+
+<!--========== SCROLL UP ==========-->
+<a href="#" class="scrollup" id="scroll-up">
+    <i class="bx bx-chevrons-up"></i>
+</a>
+
+<!--=============== SCROLLREVEAL ===============-->
+<script src="./js/navegação.js"></script>
+<!--=============== SWIPER JS ===============-->
+<script src="./js/swiper-bundle.min.js"></script>
+
+<!--=============== MAIN JS ===============-->
+<script src="js/index.js"></script>
+</body>
+</html>
