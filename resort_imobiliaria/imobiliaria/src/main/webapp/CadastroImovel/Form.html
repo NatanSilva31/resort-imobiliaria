@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <title>Adicionar Imovel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+    />
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+<div class="container">
+    <div class="col" id="sidebar">
+        <nav>
+            <div class="header">
+                <a class="brand" href="#"><i class="fa fa-user"></i></a>
+                <button id="menu"><i class="fa fa-bars"></i></button>
+            </div>
+            <ul>
+                <li class="search">
+                    <input class="form-control" id="search" placeholder="Search..." />
+                    <button class="btn-search">
+                        <i class="fa fa-lg fa-search"></i>
+                    </button>
+                </li>
+                <li class="nav-text">Painel admin</li>
+                <li><a class="active" href="#">Adicionar imovel</a></li>
+                <li><a href="./index.html">Tela geral</a></li>
+                <!-- <li><a href="#">test</a></li>
+                <li><a href="#">test</a></li> -->
+                <li class="nav-text">+</li>
+                <li>
+                <li class="nav-text">UXvideos</li>
+                <div class="divider"></div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="col">
+        <div class="row fluid header">
+            <div class="label">
+                <span>Admin</span>
+                <h2>Add Imóvel</h2>
+            </div>
+            <form action="/add-imovel" method="post">
+                <div>
+                    <label for="titulo">Título:</label>
+                    <input type="text" name="titulo" id="titulo" required>
+                </div>
+
+                <div>
+                    <label for="endereco">Endereço:</label>
+                    <input type="text" name="endereco" id="endereco" required>
+                </div>
+
+                <div>
+                    <label for="tipo">Tipo:</label>
+                    <select name="tipo" id="tipo" required>
+                        <option value="Casa">Casa</option>
+                        <option value="Apartamento">Apartamento</option>
+                        <option value="Terreno">Terreno</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="status">Status:</label>
+                    <select name="status" id="status" required>
+                        <option value="Ativo">Ativo</option>
+                        <option value="Inativo">Inativo</option>
+                        <option value="Vendido">Vendido</option>
+                    </select>
+                </div>
+
+
+                <div>
+                    <label for="comentarios">Comentários:</label><br>
+                    <textarea name="comentarios" id="comentarios" rows="4" cols="50"></textarea>
+                </div>
+
+                <div>
+                    <label for="descricao">Descrição:</label><br>
+                    <textarea name="descricao" id="descricao" rows="4" cols="50" required></textarea>
+                </div>
+                <div>
+                    <label for="preco">Preço:</label>
+                    <input type="number" name="preco" id="preco" step="0.01" required>
+                </div>
+                <center>
+                    <div>
+                        <button type="submit">Adicionar Imóvel</button>
+                    </div>
+                </center>
+            </form>
+        </div>
+    </div>
+</div>
+<script src="https://codepen.io/milesmanners/pen/WOeOrV.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/726875/fontawesome.js"></script>
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/726875/solid.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<script src="https://codepen.io/milesmanners/pen/XgYOPy.js"></script>
+<script src="./script.js"></script>
+</body>
+</html>
