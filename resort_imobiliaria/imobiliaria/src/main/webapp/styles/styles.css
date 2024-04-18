@@ -38,7 +38,7 @@
 }
 
 /* Responsive typography */
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 12px) {
   :root {
     --biggest-font-size: 4rem;
     --h1-font-size: 2.25rem;
@@ -1026,7 +1026,7 @@ body.dark-theme {
 
   .nav__list {
     display: flex;
-    column-gap: 3rem;
+    column-gap: 2.5rem;
   }
 
   .nav__link {

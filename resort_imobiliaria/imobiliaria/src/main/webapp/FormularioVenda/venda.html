@@ -1,37 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <title>Contate-nos</title>
+    <title>Agendamento de Propriedades</title>
     <link rel="stylesheet" href="venda.css">
-
-    
 </head>
 <body>
-    <div class="contact-form">
-        <h1>Contate-nos</h1>
-        <div class="container">
-            <div class="main">
-                <div class="content">
-                    <h2>Contate-nos</h2>
-                    <form id="contactForm" action="#" method="post">
-                        <input type="text" name="name" placeholder="Coloque o seu nome">
-                        <input type="email" name="email" id="email" placeholder="Coloque o seu e-mail">
-                        <span id="email-error" class="error-message"></span>
-                        <textarea name="message" placeholder="Coloque sua mensagem"></textarea>                   
-                        <button type="submit" class="btn">Enviar <i class="fas fa-paper-plane"></i></button>
-                    </form>
-                    <div id="confirmation-message">E-mail encaminhado com sucesso!</div>
-                </div>
-                <div class="form-img">
-                    <img src="bg1.png" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <script src="venda.js"></script>
+<div class="container">
+<div id="notification" class="notification" style="display: none;">Agendamento realizado com sucesso!</div>
+
+    <h2>Agende sua Visita</h2>
+    <form id="booking-form">
+        <div class="form-group">
+            <label for="property">Propriedade:</label>
+            <select id="property" name="property" required>
+                <option value="">Selecione uma propriedade</option>
+                <option value="propriedade1">Propriedade 1</option>
+                <option value="propriedade2">Propriedade 2</option>
+                <option value="propriedade3">Propriedade 3</option>
+                
+                <!-- Adicione mais opções conforme necessário -->
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="date">Data da Visita:</label>
+            <input type="date" id="date" name="date" required>
+        </div>
+        <button type="submit">Agendar Visita</button>
+    </form>
+</div>
+
+<script src="venda.js"></script>
 </body>
 </html>

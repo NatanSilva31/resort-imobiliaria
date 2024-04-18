@@ -1,22 +1,28 @@
-document.getElementById('contactForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // Evita o envio padrão do formulário
+document.addEventListener("DOMContentLoaded", function() {
+    const form = document.getElementById("booking-form");
 
-    // Validação do campo de e-mail
-    var emailInput = document.getElementById('email');
-    var emailError = document.getElementById('email-error');
+    form.addEventListener("submit", function(event) {
+        event.preventDefault(); // Previne o envio real do formulário para demonstração
 
-    if (emailInput.value.trim() === '') {
-        emailError.textContent = 'O campo de e-mail é obrigatório!';
-        emailError.style.display = 'block';
-        return; // Impede o envio do formulário se o campo de e-mail estiver vazio
-    } else {
-        emailError.textContent = '';
-        emailError.style.display = 'none';
-    }
+        const name = document.getElementById("name").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const date = document.getElementById("date").value.trim();
+        const property = document.getElementById("property").value.trim();
 
-    // Exibe a mensagem de confirmação
-    document.getElementById('confirmation-message').style.display = 'block';
+        if (!name || !email || !date || property === "") {
+            alert("Por favor, preencha todos os campos.");
+        } else {
+            // Exibe a notificação
+            const notification = document.getElementById("notification");
+            notification.style.display = "block";
 
-    // Limpa os campos preenchidos
-    document.getElementById('contactForm').reset();
+            // Oculta a notificação após 3 segundos
+            setTimeout(function() {
+                notification.style.display = "none";
+            }, 3000);
+
+            // Aqui você pode adicionar o código para processar/enviar o formulário
+            console.log("Formulário enviado com sucesso!");
+        }
+    });
 });
