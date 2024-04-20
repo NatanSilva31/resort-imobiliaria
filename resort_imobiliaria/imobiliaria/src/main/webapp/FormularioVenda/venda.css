@@ -1,21 +1,24 @@
+/* Estilo para as letras */
 body {
     font-family: Arial, sans-serif;
     background-color: #f5f5f5;
     padding: 20px;
 }
 
+/* Restante do seu CSS permanece inalterado */
 .container {
     max-width: 500px;
     margin: auto;
     background: white;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Increased shadow */
     border-radius: 5px;
 }
 
 h2 {
     text-align: center;
     color: #333;
+    font-size: 24px; /* Tamanho maior para o título */
 }
 
 .form-group {
@@ -25,6 +28,7 @@ h2 {
 .form-group label {
     display: block;
     margin-bottom: 5px;
+    font-weight: bold; /* Deixa o texto do label em negrito */
 }
 
 .form-group input[type="text"],
@@ -40,7 +44,7 @@ h2 {
 button {
     width: 100%;
     padding: 10px;
-    background-color: #007bff;
+    background-color: #b695c0; /* Lilás */
     color: white;
     border: none;
     border-radius: 4px;
@@ -48,15 +52,15 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #a17aa3; /* Lilás mais escuro */
 }
 
 .notification {
-    background-color: #4CAF50; /* Green */
+    background-color: #4CAF50; /* Verde */
     color: white;
     padding: 10px;
     margin-bottom: 15px;
     text-align: center;
     border-radius: 4px;
-    display: none; /* Hidden by default */
+    display: none; /* Oculto por padrão */
 }
