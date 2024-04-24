@@ -27,12 +27,14 @@ Funcionalidades
 
 - Tela inicial
 
+- Cadastro de Imóveis
+
 - Tela de login/cadastro para efetuar a reserva
 
 - Tela com imovéis disponiveis
 
 - Tela de visualização dos imoveis
 
-- Tela de compra
+- Tela de compra (agendamento)
 
 - Formulário para contato
