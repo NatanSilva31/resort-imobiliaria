@@ -87,24 +87,36 @@
     });
 
     function signin() {
-        var email = document.getElementById('signin-email').value.trim(); // Remove espaços em branco
-        var password = document.getElementById('signin-password').value.trim(); // Remove espaços em branco
+    var email = document.getElementById('signin-email').value.trim(); // Remove espaços em branco
+    var password = document.getElementById('signin-password').value.trim(); // Remove espaços em branco
 
-        // Verifica se os campos estão vazios
-        if (email === "" || password === "") {
-            alert("Por favor, preencha todos os campos.");
-            return false;
-        }
-
-        // Verifica se o login e a senha são "admin"
-        if (email === "admin" && password === "admin") {
-            window.location.href = "../CadastroImovel/Form.html"; // Altere "outra_pasta" para o nome da pasta desejada
-            return false; // Evita que o formulário seja enviado
-        } else {
-            alert("Credenciais incorretas. Por favor, tente novamente.");
-            return false;
-        }
+    // Verifica se os campos estão vazios
+    if (email === "" || password === "") {
+        alert("Por favor, preencha todos os campos.");
+        return false;
     }
+
+    // Envie as credenciais para o servidor para validação
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", "/login", true);
+    xhr.setRequestHeader("Content-Type", "application/json");
+
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === XMLHttpRequest.DONE) {
+            if (xhr.status === 200) {
+                // Sucesso: redireciona para a próxima página
+                window.location.href = xhr.responseText;
+            } else {
+                // Erro: exibe mensagem de erro
+                alert("Credenciais incorretas. Por favor, tente novamente.");
+            }
+        }
+    };
+
+    xhr.send(JSON.stringify({ email: email, senha: password }));
+
+    return false; // Evita que o formulário seja enviado
+}
 </script>
 </body>
 
