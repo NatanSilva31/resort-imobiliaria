@@ -52,6 +52,6 @@ public class AddUsuarioServlet extends HttpServlet {
         UsuarioDao usuarioDao = new UsuarioDao();
         usuarioDao.adicionarUsuario(usuario);
 
-        response.sendRedirect("confirmacao.jsp");
+        response.sendRedirect("index.jsp");
     }
 }
