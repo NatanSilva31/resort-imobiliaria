@@ -1,0 +1,92 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.navbar-brand {
+    margin-right: 20px;
+    background-color: #FFD18B;
+    padding: 10px;
+    background-image: url('./Imagens/logo.png'); /* Add the logo image as a background image */
+    background-size: contain; /* Scale the background image to fit the container */
+    background-position: left center; /* Position the background image to the left center */
+    width: 100px; /* Set the width of the logo image */
+    height: 50px; /* Set the height of the logo image */
+}
+
+.logo{
+background-color: #FFD18B;
+}
+
+.navbar-brand img {
+
+}
+
+.navbar-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.nav-item {
+    margin-right: 20px;
+}
+
+.containerIMG-table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.special-link {
+    color: red;
+    font-weight: bold;
+}
+
+body {
+    background-color: #FFD18B;
+    margin: 0;
+    padding: 0;
+}
+
+.containerIMG {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Adds vertical alignment to the center */
+    margin-top: 20px; /* Adds space between the navbar and the image */
+    /* margin-bottom: 20px; */ /* Remove this line to reduce the space between the image and the table */
+}
+
+.table {
+    background-color: #FFD18B;
+    color: #fff;
+    font-size: 18px; /* Aumenta o tamanho da fonte */
+}
+
+.footer {
+    background-color: #D2A93F;
+    color: #fff;
+    padding: 20px;
+}
+
+.container-table {
+    margin: 20px auto; /* Centralizes horizontally */
+    width: 80%; /* Sets the table width */
+    padding: 20px; /* Adds padding around the table */
+    display: flex; /* Adds flex display */
+    justify-content: center; /* Centers vertically */
+    align-items: center; /* Centers horizontally */
+    flex-direction: column; /* Stacks the elements vertically */
+}
+
+.table-informacoes th,
+.table-informacoes td,
+.table-contato th,
+.table-contato td {
+    padding: 15px; /* Adiciona um espaço interno maior entre o conteúdo da célula e a borda */
+    text-align: center; /* Alinha o texto ao centro */
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Favoritos</title>
+    <link rel="stylesheet" href="./styles/favoritos.css">
+
+</head>
+<body>
+      
+    <h1>Meus Favoritos</h1>
+    <div id="imoveis-container"></div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            fetch('get-favorites')
+                .then(response => response.json())
+                .then(data => {
+                    const imoveisContainer = document.getElementById('imoveis-container');
+                    data.forEach(imovel => {
+                        const imovelElement = document.createElement('div');
+                        imovelElement.classList.add('imovel');
+                        imovelElement.innerHTML = `
+                            <h2>${imovel.tipoImovel} - ${imovel.tipoVenda}</h2>
+                            <p>Endereço: ${imovel.endereco}, ${imovel.numero}, ${imovel.cidade} - ${imovel.uf}</p>
+                            <p>Valor: ${imovel.valor}</p>
+                            <p>Quartos: ${imovel.numQuartos}, Banheiros: ${imovel.numBanheiros}</p>
+                            <p>Metros Quadrados: ${imovel.metrosQuadrados}</p>
+                            <p>${imovel.descricaoImovel}</p>
+                            <button onclick="toggleFavorite(${imovel.idImovel}, ${imovel.isFavorited ? 'remove' : 'add'})">
+                                ${imovel.isFavorited ? 'Remover dos Favoritos' : 'Adicionar aos Favoritos'}
+                            </button>
+                        `;
+                        imoveisContainer.appendChild(imovelElement);
+                    });
+                });
+        });
+
+        function toggleFavorite(imovelId, action) {
+            fetch('manage-favorites', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded'
+                },
+                body: `imovelId=${imovelId}&action=${action}`
+            }).then(() => {
+                window.location.reload();
+            });
+        }
+    </script>
+</body>
+</html>

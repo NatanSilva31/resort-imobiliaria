@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ResortImobiliaria</title>
+    <link rel="stylesheet" href="../vendor/bootstrap/css/bootstrap.min.css">
+    <!-- Main File For CSS -->
+    <link rel="stylesheet" href="../vendor/custom/style.css" />
+  </head>
+
+  <body>
+    <!-- Start Header -->
+    <header class="p-3 border-bottom shadow border-bottom bg-body fixed-top">
+        <div class="container d-flex flex-wrap align-items-center justify-content-center justify-content-md-between mb-1 ">
+            <a href="javascript:void(0)" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none" onclick="history.back()">
+                <img src="../vendor/bootstrap/bootstrap-icons/arrow-left.svg" alt="Back" width="30" height="50" title="Back">
+            </a>
+        </div>
+    </header>
+
+    <!-- Start Main Content -->
+    <main>
+      <!-- Intro -->
+      <section class="bg-light">
+        <div class="d-flex align-items-center bg" style="z-index: -1; height: 100vh;background-size: cover; background-position: center;">
+            <div class="container pt-5">
+                <div class="row d-flex justify-content-center align-items-center pt-4">
+                    <div class="col-12 col-md-9 col-lg-7 col-xl-5">
+                        <div class="card shadow" style="border-radius: 15px;">
+                            <div class="card-body p-5">
+                                <h2 class="text-start ">Entre</h2>
+                                <p class="mb-5">Abra as portas para um novo morar</p>
+                                <form id="loginForm">
+                                    <div class="form-floating mb-4">
+                                        <input type="email" class="form-control form-control-lg" id="e-mail" placeholder="e-mail">
+                                        <label for="e-mail">E-mail</label>
+                                    </div>
+    
+                                    <div class="form-floating mb-4">
+                                        <input type="password" class="form-control form-control-lg" id="password" placeholder="password">
+                                        <label for="password">Senha</label>
+                                    </div>
+    
+                                    <div class="d-flex justify-content-center">
+                                        <button type="button"
+                                            class="btn btn-primary btn-block btn-lg" id="loginButton">Entrar</button>
+                                    </div>
+    
+                                    <p class="text-center text-muted mt-4 mb-3">Ainda não tem uma conta? <a href="../pages/signin.html"
+                                        class="fw-bold text-body"><u>Cadastre-se</u></a>
+                                    </p>
+                                    <div class="alert alert-danger d-flex justify-content-center mb-1 visually-hidden" role="alert">
+                                        <strong></strong>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <!-- Main File For JS -->
+    <script src="../vendor/custom/login.js"></script>
+  </body>
+</html>
