@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ResortImobiliaria</title>
+    <link rel="stylesheet" href="../vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../vendor/custom/style.css" />
+</head>
+
+<body>
+    <header class="p-3 fixed-top">
+        <div
+            class="container d-flex flex-wrap align-items-center justify-content-center justify-content-md-between mb-1 ">
+            <a href="javascript:void(0)"
+                class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none"
+                onclick="history.back()">
+                <img src="../vendor/bootstrap/bootstrap-icons/arrow-bar-left.svg" alt="Back" width="30" height="50"
+                    title="Back">
+            </a>
+        </div>
+    </header>
+    <main>
+        <article class="main-container">
+            <div class="login-wrapper">
+                <section class="form-wrapper">
+                    <div class="form-container">
+                        <div class="form-messages">
+                            <center><a href="#">
+                                <img src="../imagens/favicon.png" style="width: 50px; height: 50px; margin-top: 7rem;" title="Back">
+                            </a></center>
+                            <h1>Tela de login</h1>
+                            <p>Faça login para uma variedade de propriedades que combinam com você e com muita
+                                facilidade.</p>
+                        </div>
+                        <form id="loginForm">
+                            <div class="form-floating mb-4">
+                                <input type="email" class="form-control form-control-lg" id="e-mail"
+                                    placeholder="e-mail">
+                                <label for="e-mail">E-mail</label>
+                            </div>
+
+                            <div class="form-floating mb-4">
+                                <input type="password" class="form-control form-control-lg" id="password"
+                                    placeholder="password">
+                                <label for="password">Senha</label>
+                            </div>
+
+                            <div class="d-flex justify-content-center">
+                                <button type="button" class="btn btn-primary btn-block btn-lg"
+                                    id="loginButton">Entrar</button>
+                            </div>
+
+                            <p class="text-center text-muted mt-4 mb-3">Ainda não tem uma conta? <a
+                                    href="../pages/signin.html" class="fw-bold text-body"><u>Cadastre-se</u></a>
+                            </p>
+                            <div class="alert alert-danger d-flex justify-content-center mb-1 visually-hidden"
+                                role="alert">
+                                <strong></strong>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+                <section class="image-wrapper">
+                </section>
+            </div>
+        </article>
+    </main>
+
+    <footer class="footer section">
+        <div class="footer__container container grid">
+          <div>
+            <a href="#" class="footer__logo">
+              Resort <i class="bx bxs-home-alt-2"></i>
+            </a>
+            <p class="footer__description">
+              Nossa visão é fazer com que todas as pessoas <br />
+              encontrem o melhor lugar para viver.
+            </p>
+          </div>
+    
+          <div class="footer__content">
+            <div>
+              <h3 class="footer__title">Sobre</h3>
+    
+              <ul class="footer__links">
+                <li>
+                  <a href="#" class="footer__link">Sobre nós</a>
+                </li>
+                <li>
+                  <a href="#" class="footer__link">Características</a>
+                </li>
+                <li>
+                  <a href="#" class="footer__link">Notícias e blogs</a>
+                </li>
+              </ul>
+            </div>
+    
+            <div>
+              <h3 class="footer__title">Empresa</h3>
+    
+              <ul class="footer__links">
+                <li>
+                  <a href="#" class="footer__link">Como trabalhamos?</a>
+                </li>
+                <li>
+                  <a href="#" class="footer__link">Capital</a>
+                </li>
+                <li>
+                  <a href="https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm"
+                    class="footer__link">Segurança</a>
+                </li>
+              </ul>
+            </div>
+    
+            <div>
+              <h3 class="footer__title">Support</h3>
+    
+              <ul class="footer__links">
+                <li>
+                  <a href="https://api.whatsapp.com/send?phone=5511915635527" class="footer__link">FAQs</a>
+                </li>
+                <li>
+                  <a href="https://api.whatsapp.com/send?phone=5511915635527" class="footer__link">Suporte</a>
+                </li>
+                <li>
+                  <a href="FormularioContato/venda.html" class="footer__link">Contate-nos</a>
+                </li>
+              </ul>
+            </div>
+    
+            <div>
+              <h3 class="footer__title">Siga-nos</h3>
+    
+              <ul class="footer__social">
+                <a href="https://api.whatsapp.com/send?phone=5511915635527" class="footer__social-link">
+                  <i class="bx bxl-facebook-circle"></i>
+                </a>
+                <a href="https://instagram.com/natansv__31?igshid=NzZlODBkYWE4Ng==" class="footer__social-link">
+                  <i class="bx bxl-instagram-alt"></i>
+                </a>
+                <a href="https://www.pinterest.com/" class="footer__social-link">
+                  <i class="bx bxl-pinterest"></i>
+                </a>
+              </ul>
+            </div>
+          </div>
+        </div>
+    
+        <div class="footer__info container">
+          <span class="footer__copy">
+            &#169; Grupo pi. Todos os direitos reservados
+          </span>
+    
+          <div class="footer__privacy">
+            <a href="#">Termos e Acordos</a>
+            <a href="#">Política de Privacidade</a>
+          </div>
+        </div>
+      </footer>
+    <script src="../vendor/custom/login.js"></script>
+
+</body>
+
+</html>

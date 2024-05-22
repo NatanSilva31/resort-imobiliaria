@@ -1,0 +1,287 @@
+/* Scrollbars */
+*::-webkit-scrollbar-track {
+    /* cor e reio da faixa da barra de rolagem */
+    background-color: #ffffff;
+}
+*::-webkit-scrollbar {
+    /* Largura e altura da barra de rolagem */
+    width: 6px;
+    background-color: #ffffff;
+}
+*::-webkit-scrollbar-thumb {
+    /* Cor e raio do "polegar" da barra de rolagem */
+    background-color: #88888881;
+    border-radius: 35px;
+}
+* {
+    box-sizing: border-box;
+  }
+  
+  .main-container {
+    min-height: 100vh;
+    background-color: #ecf4f3;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    font-family: 'Rubik', sans-serif;
+    font-size: 13px;
+  }
+  
+  .main-container a {
+    text-decoration: none;
+  }
+  
+  .main-container .login-wrapper {
+    background-color: #fff;
+    -webkit-box-shadow: 0px 0px 172px 6px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 0px 172px 6px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 172px 6px rgba(0,0,0,0.2); 
+  
+    width: 100%;
+    max-width: 900px;
+    min-height: 720px;
+    display: flex;
+  }
+  
+  /* Estilos do formulario */
+  .main-container .login-wrapper .form-wrapper {
+    min-width: 45%;
+    
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .main-container .login-wrapper .form-wrapper .form-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    padding: 15px;
+    margin-top: 15px;
+  
+    font-weight: 900;
+  }
+  
+  .main-container .login-wrapper .form-wrapper .form-header .fa-arrow-left,
+  .main-container .login-wrapper .form-wrapper .form-header .register-link,
+  .main-container .login-wrapper .form-wrapper .form-container .forgot-pass {
+    color: #686b72;
+  }
+  
+  
+  .main-container .login-wrapper .form-wrapper .form-container {
+    padding: 0px 60px;
+  }
+  
+  .main-container .login-wrapper .form-wrapper .form-container .form-messages {
+    text-align: left;
+    line-height: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .main-container .login-wrapper .form-wrapper .form-container .form-messages h2 {
+    margin-bottom: 15px;
+    margin-top: 130px;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  
+  .main-container .login-wrapper .form-wrapper .form-container .form input {
+    width: 100%;
+    margin-bottom: 15px;
+    background-color: #eeeeee;
+    border: none;
+    padding: 10px;
+  }
+  
+  .main-container .login-wrapper .form-wrapper .form-container .form input:focus {
+    outline: 2px solid #4694a8;
+  }
+  
+  .main-container .login-wrapper .form-wrapper .form-container .form a {
+    display: block;
+  }
+  
+  .main-container .login-wrapper .form-wrapper .form-container .form .forgot-pass {
+    text-align: right;
+    font-weight: 900;
+  }
+  
+  .main-container .login-wrapper .form-wrapper .form-container .form .login-button {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: #4694a8;
+    color: #fff;
+    text-align: center;
+  }
+  
+  /* Separador */
+  .main-container .login-wrapper .form-wrapper .form-container .separator {
+    border: 2px solid #e8e9ea;
+    margin-bottom: 35px;
+  }
+  
+  /* login */
+  .main-container .login-wrapper .form-wrapper .form-container .login-options {
+    margin: 20px 20px;
+    text-align: center;
+  }
+  
+  .main-container .login-wrapper .form-wrapper .form-container .login-options .login-text {
+    margin-bottom: 15px;
+  }
+  
+  .main-container .login-wrapper .form-wrapper .form-container .login-icons {
+    font-size: 20px;
+  }
+  
+  .main-container .login-wrapper .form-wrapper .form-container .login-icons .fa-facebook-square,
+  .main-container .login-wrapper .form-wrapper .form-container .login-icons .fa-google,
+  .main-container .login-wrapper .form-wrapper .form-container .login-icons .fa-twitter {
+    color: #4694a8;
+    padding: 0px 10px;
+  }
+  
+  /* Imagen*/
+  
+  .main-container .image-wrapper {
+    background: url("../../imagens/home.jpg");
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  
+  .main-container .image-wrapper .image-message {
+    color: #fff;
+    line-height: 20px;
+  
+    padding: 50px 70px 70px 40px;
+  
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .main-container .image-wrapper .image-message .image-hr-container {
+    margin: 5px 20px;
+  }
+  
+  .main-container .image-wrapper .image-message .image-hr-container .image-hr {
+    border: 1px solid #e8e9ea;
+    min-width: 30px;
+  }
+  
+  .main-container .image-wrapper .image-message .image-text h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+  /*=============== FOOTER ===============*/
+.footer__container {
+  row-gap: 2.5rem;
+}
+
+.footer__logo {
+  color: var(--first-color);
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-semi-bold);
+  display: inline-flex;
+  align-items: center;
+  column-gap: 0.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.footer__logo i {
+  font-size: 1.25rem;
+}
+
+.footer__description,
+.footer__link {
+  font-size: var(--small-font-size);
+  font-weight: var(--font-medium);
+}
+
+.footer__content,
+.footer__links {
+  display: grid;
+}
+
+.footer__content {
+  grid-template-columns: repeat(2, max-content);
+  gap: 2.5rem 4rem;
+}
+
+.footer__title {
+  font-size: var(--h3-font-size);
+  margin-bottom: 1rem;
+}
+
+.footer__links {
+  row-gap: 0.5rem;
+}
+
+.footer__link {
+  color: var(--text-color);
+}
+
+.footer__link:hover {
+  color: var(--title-color);
+}
+
+.footer__social {
+  display: flex;
+  column-gap: 1rem;
+}
+
+.footer__social-link {
+  font-size: 1.25rem;
+  color: var(--text-color);
+  transition: 0.3s;
+}
+
+.footer__social-link:hover {
+  color: var(--title-color);
+}
+
+.footer__info,
+.footer__privacy {
+  display: flex;
+}
+
+.footer__info {
+  padding-bottom: 6rem;
+  margin-top: 5.5rem;
+  flex-direction: column;
+  text-align: center;
+  row-gap: 1.5rem;
+}
+
+.footer__copy,
+.footer__privacy a {
+  font-size: var(--small-font-size);
+  font-weight: var(--font-medium);
+  color: var(--text-color);
+}
+
+.footer__privacy {
+  justify-content: center;
+  column-gap: 1.25rem;
+}
+/*=============== SCROLL BAR ===============*/
+::-webkit-scrollbar {
+  width: 0.6rem;
+  border-radius: 0.5rem;
+  background-color: hsl(228, 8%, 76%);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: hsl(228, 8%, 64%);
+  border-radius: 0.5rem;
+}
